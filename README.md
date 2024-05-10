@@ -1,1 +1,1 @@
-<p><button><a href="https://sakibbdcse.github.io/github-users-finders/" target="_blank">view live </a></button>b</p>
+<p><a href="https://sakibbdcse.github.io/github-users-finders/" target="_blank">view live </a></p>
