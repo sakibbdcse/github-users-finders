@@ -9,12 +9,13 @@ searchBtn.addEventListener('click', (e)=>{
             .then(data =>{
                 // console.log(data)
                 if(data.message == 'Not Found'){
-                    console.log('data is not find')
+                    ui.showAlert('User Not Found', 'alert alert-danger');
                 }else{
                     ui.showProfile(data)
                 }
             })
     }else{
-        alert('please input')
+        // alert('please input')
+        ui.clearProfile()
     }
 })

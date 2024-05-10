@@ -38,4 +38,29 @@ class UI {
                 </div>
         `
     }
+
+    clearProfile(){
+        this.profile.innerHTML = '';
+    }
+
+    showAlert(message, className) {
+        let div = document.createElement('div');
+        div.className = className;
+        div.appendChild(document.createTextNode(message));
+    
+        let container = document.querySelector('.searchContainer');
+        let search = document.querySelector('.search');
+    
+        // Check if both container and search elements exist and if search is a child of container
+        if (container && search && container.contains(search)) {
+            container.insertBefore(div, search);
+        } else {
+            // If search element not found or not a child of container, append div to container
+            container.appendChild(div);
+        }
+    }
+    
+    
+    
+    
 }
