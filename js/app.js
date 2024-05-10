@@ -1,6 +1,6 @@
 let searchBtn = document.querySelector('#Searchbtn')
 let searchUser = document.querySelector('#searchUser')
-
+let ui = new UI();
 searchBtn.addEventListener('click', (e)=>{
     let userText = searchUser.value;
     if(userText != ''){
@@ -11,7 +11,7 @@ searchBtn.addEventListener('click', (e)=>{
                 if(data.message == 'Not Found'){
                     console.log('data is not find')
                 }else{
-                    console.log(data)
+                    ui.showProfile(data)
                 }
             })
     }else{
